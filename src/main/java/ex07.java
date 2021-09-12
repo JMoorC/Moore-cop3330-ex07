@@ -15,10 +15,11 @@ public class ex07 {
         double length = parseFloat(inScan.nextLine());
         System.out.print("What is the width of the room in feet? ");
         double width = parseFloat(inScan.nextLine());
-        double area = length * width;
+        double areaImp = length * width;
+        double areaMet = areaImp * MTF2;
 
         System.out.printf(
-                "You entered dimensions of %.3f feet by %.3f feet\nThe area is\n%.3f square feet\n%.3f square meters\n"
-                ,length, width, area, area * mtf2);
+                "You entered dimensions of %.3f feet by %.3f feet.\nThe area is\n%.3f square feet\n%.3f square meters\n"
+                ,length, width, areaImp, areaMet);
     }
 }
